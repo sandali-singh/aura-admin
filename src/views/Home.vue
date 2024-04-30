@@ -1,13 +1,11 @@
 <template>
-  <v-main class="pa-0 ma-0">
+  <v-main class="pa-0" >
     <v-container fluid>
       <v-row class="mt-0 pt-0" justify="center" align="center">
         <v-col
           class="mt-0"
           style="
-            background-color: #a9c9ff;
-            background-image: linear-gradient(76deg, #deeaff 31%, #ffbbec 420%);
-
+            background-color: #F5F8FC;
             border-radius: 12px;
           "
         >

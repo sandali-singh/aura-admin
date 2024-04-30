@@ -2,8 +2,8 @@
   <v-app-bar
     app
     fixed
-    clipped-left
-    class="white black--text"
+    clipped
+    class="black--text"
     flat
     color="#F5F8FC"
   >

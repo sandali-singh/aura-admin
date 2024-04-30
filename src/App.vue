@@ -1,5 +1,5 @@
 <template>
-  <v-app style="background-color: #F5F8FC;">
+  <v-app style="background-color: white;">
     <v-snackbar
       v-model="snackWithButtons"
       :timeout="timeout"

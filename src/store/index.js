@@ -66,7 +66,7 @@ export default new Vuex.Store({
         }
       },
       {
-        text: 'Manangment',
+        text: 'Mgmt',
         to: '/roles',
         icon: 'mdi-account-group-outline',
         access: {

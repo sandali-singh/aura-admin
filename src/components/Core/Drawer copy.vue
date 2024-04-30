@@ -1,48 +1,56 @@
 <template>
   <v-navigation-drawer
     app
-    clipped-left
+    clipped
     v-model="drawer"
     floating
-    width="100px"
+    width="250px"
     color="#F5F8FC"
-    class="text-center"
   >
-    <v-avatar
-      :color="'#F5F8FC'"
-      size="55"
-      class=""
-    >
-      <v-icon>mdi-google</v-icon>
-    </v-avatar>
-    <v-list>
-      <v-btn
-        depressed
-        :color="$vuetify.theme.dark ? '#292929' : '#F5F8FC'"
-        class="px-0 py-8 mb-1"
-        style="border-radius: 16px"
-        v-for="(link, i) in links.filter((li) => li.access[role])"
-        :key="i"
-        @click="onClick($event, link)"
-        :to="link.to"
-      >
-        <div>
-          <v-icon style="display: block" size="20" class="mb-1">{{
-            link.icon
-          }}</v-icon>
-          <span
-            style="
-              font-size: 10px;
-              text-transform: capitalize;
-              font-weight: 600;
-            "
-            class="mb-0 mt-4 google-font"
-            >{{ link.text }}</span
-          >
-        </div>
-      </v-btn>
-    </v-list>
+    <v-list-item two-line class="py-2">
+      <v-list-item-avatar>
+        <img
+          :src="
+            userDetails.image && userDetails.image.length > 0
+              ? userDetails.image
+              : require('@/assets/img/default_avatar.jpg')
+          "
+        />
+      </v-list-item-avatar>
+      <v-list-item-content>
+        <v-list-item-title class="google-font">{{
+          userDetails.name || "User-Name"
+        }}</v-list-item-title>
+        <v-list-item-subtitle>{{
+          userDetails.email || "User-Email"
+        }}</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item>
+    <v-divider></v-divider>
 
+    <v-list dense shaped>
+      <v-list-item-group color="#4285F4">
+        <v-list-item
+          v-for="(link, i) in links.filter((li) => li.access[role])"
+          :key="i"
+          :to="link.to"
+          :href="link.href"
+          @click="onClick($event, link)"
+          class="google-font my-0 py-0"
+          color="primary"
+        >
+          <v-list-item-icon>
+            <v-icon>{{ link.icon }}</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title style="font-size: 85%">{{
+              link.text
+            }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list-item-group>
+    </v-list>
     <v-divider></v-divider>
     <v-list dense>
       <v-list-item

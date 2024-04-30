@@ -1,11 +1,15 @@
 <template>
-  <v-main style="background-color: #F5F8FC;">
-    <v-container fluid class="ma-0 pa-0" style="height: 100% !important">
+  <v-main class="ma-0" style="background-color: #F5F8FC;">
+    <v-container
+      fluid
+      class="white"
+      style="height: 100% !important; border-radius: 20px !important"
+    >
       <v-row align="center" justify="center">
-        <v-col md="11">
+        <v-col md="11" class="mt-10">
           <v-slide-y-reverse-transition>
-        <router-view v-show="show" />
-      </v-slide-y-reverse-transition>
+            <router-view v-show="show" />
+          </v-slide-y-reverse-transition>
         </v-col>
       </v-row>
     </v-container>
