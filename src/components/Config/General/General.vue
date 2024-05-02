@@ -45,10 +45,9 @@
                     style="
                       border: 1px solid #e0e0e0;
                       border-radius: 12px;
-                      background: #fafafa;
                     "
                   >
-                    <p class="google-font my-0 py-0 mb-2">Community Info</p>
+                    <p class="google-font my-0 py-0 mb-4">Community Info</p>
                     <v-text-field
                       class="my-0 py-0"
                       label="Community Name"
@@ -100,10 +99,9 @@
                     style="
                       border: 1px solid #e0e0e0;
                       border-radius: 12px;
-                      background: #fafafa;
                     "
                   >
-                    <p class="google-font my-0 py-0 mb-2">Blogs</p>
+                    <p class="google-font my-0 py-0 mb-4">Blogs</p>
                     <v-text-field
                       class="my-0 py-0"
                       label="Medium Blog Username"

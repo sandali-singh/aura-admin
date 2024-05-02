@@ -1,7 +1,7 @@
 export default {
   apiKey: "AIzaSyCOl0qzkhCDmyWeeIT8AZe4xyJJlIfU5gE",
   authDomain: "myaurapp.firebaseapp.com",
-  databaseURL: "https://myaurapp.firebaseio.com",
+  databaseURL: "https://mmyaurapp.firebaseio.com",
   projectId: "myaurapp",
   storageBucket: "myaurapp.appspot.com",
   messagingSenderId: "419511997060",
